@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snacknest Kitchen - Premium Fast Food</title>
+
+  <link rel="icon" type="images/png" sizes="16x16" href="image/favicon-16.png">
+  <link rel="icon" type="images/png" sizes="32x32" href="image/favicon-32.png">
+  <link rel="icon" type="images/png" sizes="48x48" href="image/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-180.png">
+  <link rel="shortcut icon" href="images/favicon-32.png">
   
   <!-- Google Fonts - Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -81,7 +79,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-image-container" id="heroImageContainer">
-          <img src="hero-burger.jpg" alt="Premium Gourmet Burger" class="hero-image" id="heroImage">
+          <img src="image/hero-burger.jpg" alt="Premium Gourmet Burger" class="hero-image" id="heroImage">
           <div class="hero-image-glow"></div>
         </div>
       </div>
@@ -288,7 +286,7 @@
         </div>
         <div class="about-image reveal">
           <div class="about-image-wrapper">
-            <img src="hero-burger.jpg" alt="About Snacknest">
+            <img src="image/hero-burger.jpg" alt="About Snacknest">
             <div class="about-image-accent"></div>
           </div>
         </div>
@@ -379,8 +377,7 @@
     event.preventDefault();
     const form = event.target;
 
-    emailjs.sendForm(service_ks00ze6'', 'YOUR_TEMPLATE_ID', form)
-      .then(() => {
+      then(() => {
         alert("Message sent successfully!");
         form.reset();
       }, (error) => {
